@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Traits : MonoBehaviour {
+[System.Serializable]
+public class Traits {
 
 	public string name, charClass;
 	public char sex;

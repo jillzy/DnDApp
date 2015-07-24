@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Stats : MonoBehaviour {
+
+
+[System.Serializable]
+public class Stats{
 
 	public int str, dex, con, inte, wis, cha;
 	
@@ -65,11 +68,6 @@ public class Stats : MonoBehaviour {
 
 	public int RollCha () {
 		return (Roll() + this.cha);
-	}
-
-	void OnGUI(){
-	//	GUI.Label(Rect(0,0,100,50),"STR: " + str + "\n");
-		GUI.Label(new Rect(0,0,Screen.width,Screen.height), "STR: " + str);
 	}
 
 }
