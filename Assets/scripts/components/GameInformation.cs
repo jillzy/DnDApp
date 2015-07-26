@@ -5,13 +5,13 @@ public class GameInformation : MonoBehaviour {
 
 	void Start() {
 
-		/*PlayerOneStats = new Stats();
-		PlayerOneStats.SetStr(1);
-		PlayerOneStats.SetDex(2);
-		PlayerOneStats.SetCon(3);
-		PlayerOneStats.SetInte(4);
-		PlayerOneStats.SetWis(10);
-		PlayerOneStats.SetCha(7);
+		/*PlayerOneAS = new AbilityScores();
+		PlayerOneAS.SetStr(1);
+		PlayerOneAS.SetDex(2);
+		PlayerOneAS.SetCon(3);
+		PlayerOneAS.SetInte(4);
+		PlayerOneAS.SetWis(10);
+		PlayerOneAS.SetCha(7);
 
 		PlayerOneTraits = new Traits();
 		PlayerOneTraits.SetName("Electra Boogaloo");
@@ -41,7 +41,7 @@ public class GameInformation : MonoBehaviour {
 		DontDestroyOnLoad(transform.gameObject);
 	}
 	
-	public static Stats PlayerOneStats {get;set;}
+	public static AbilityScores PlayerOneAS {get;set;}
 	public static Traits PlayerOneTraits {get;set;}
 	
 }

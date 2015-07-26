@@ -16,11 +16,11 @@ public class DisplayPlayerInfo : MonoBehaviour {
 	
 	void OnGUI(){
 		GUI.Label(new Rect(0,0,Screen.width,Screen.height),
-			"STR: " + GameInformation.PlayerOneStats.str +
-			"\nDEX: " + GameInformation.PlayerOneStats.dex +
-			"\nCON: " + GameInformation.PlayerOneStats.con +
-			"\nINT: " + GameInformation.PlayerOneStats.inte +
-			"\nWIS: " + GameInformation.PlayerOneStats.wis +
-			"\nCHA: " + GameInformation.PlayerOneStats.cha);
+			"STR: " + GameInformation.PlayerOneAS.str +
+			"\nDEX: " + GameInformation.PlayerOneAS.dex +
+			"\nCON: " + GameInformation.PlayerOneAS.con +
+			"\nINT: " + GameInformation.PlayerOneAS.inte +
+			"\nWIS: " + GameInformation.PlayerOneAS.wis +
+			"\nCHA: " + GameInformation.PlayerOneAS.cha);
 	}
 }

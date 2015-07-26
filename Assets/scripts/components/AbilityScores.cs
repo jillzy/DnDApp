@@ -4,7 +4,7 @@ using System.Collections;
 
 
 [System.Serializable]
-public class Stats{
+public class AbilityScores{
 
 	public int str, dex, con, inte, wis, cha;
 	
