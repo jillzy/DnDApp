@@ -22,7 +22,7 @@ public class RollASScript : MonoBehaviour {
 		/*Call function that returns sum of three highest values*/
 		sumStr = FindHighestThree(diceValues);
 
-		GameInformation.PlayerOneAS.SetStr(sumStr);
+		ASUIUpdater.UpdateText("Str", sumStr);
 
 
 		

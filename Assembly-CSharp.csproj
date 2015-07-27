@@ -46,8 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\ChaTextScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\ConTextScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\DexTextScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\InteTextScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\StrTextScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASTextScripts\WisTextScript.cs" />
      <Compile Include="Assets\scripts\components\AbilityScoreAssign\ASUIUpdater.cs" />
-     <Compile Include="Assets\scripts\components\AbilityScoreAssign\RollASScript.cs" />
+     <Compile Include="Assets\scripts\components\AbilityScoreAssign\RollScripts\RollASScript.cs" />
      <Compile Include="Assets\scripts\components\AbilityScores.cs" />
      <Compile Include="Assets\scripts\components\DisplayPlayerInfo.cs" />
      <Compile Include="Assets\scripts\components\GameInformation.cs" />
