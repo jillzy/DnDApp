@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RollASScript : MonoBehaviour {
 	
-	public void RollAS(int abilityScoreKey) {
+	public void RollAS(int ability) {
 		
 		int[] diceValues;
 		int sumStr;
@@ -22,30 +22,30 @@ public class RollASScript : MonoBehaviour {
 		sumStr = FindHighestThree(diceValues);
 		
 		
-		switch (abilityScoreKey) {
+		switch (ability) {
 			
 		case 1: 
-			ASUIUpdater.UpdateText("Str", sumStr);
+			ASUIUpdater.UpdateScoreAndText(1, sumStr);
 			break;
 			
 		case 2:
-			ASUIUpdater.UpdateText("Dex", sumStr);
+			ASUIUpdater.UpdateScoreAndText(2, sumStr);
 			break;
 			
 		case 3:
-			ASUIUpdater.UpdateText("Con", sumStr);
+			ASUIUpdater.UpdateScoreAndText(3, sumStr);
 			break;
 			
 		case 4:
-			ASUIUpdater.UpdateText("Inte", sumStr);
+			ASUIUpdater.UpdateScoreAndText(4, sumStr);
 			break;
 			
 		case 5:
-			ASUIUpdater.UpdateText("Wis", sumStr);
+			ASUIUpdater.UpdateScoreAndText(5, sumStr);
 			break;
 			
 		case 6:
-			ASUIUpdater.UpdateText("Cha", sumStr);
+			ASUIUpdater.UpdateScoreAndText(6, sumStr);
 			break;	
 			
 		default: 

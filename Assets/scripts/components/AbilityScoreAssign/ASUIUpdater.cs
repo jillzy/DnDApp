@@ -9,38 +9,38 @@ using UnityEngine.UI;
 public class ASUIUpdater : MonoBehaviour {
 	
 
-	public static void UpdateText(string abilityScore, int newValue) {
+	public static void UpdateScoreAndText(int ability, int newValue) {
 
 		//case switch instead of ifs
-		switch (abilityScore) {
+		switch (ability) {
 
-			case "Str": 
+			case 1: 
 				GameInformation.PlayerOneAS.SetStr (newValue);
 				//DisplayText("Str");
 				StrTextScript.StrText.text = "STR: " + GameInformation.PlayerOneAS.str;
 				break;
 
-			case "Dex":
+			case 2:
 				GameInformation.PlayerOneAS.SetDex (newValue);
 				DexTextScript.DexText.text = "DEX: " + GameInformation.PlayerOneAS.dex;
 				break;
 
-			case "Con":
+			case 3:
 				GameInformation.PlayerOneAS.SetCon (newValue);
 				ConTextScript.ConText.text = "CON: " + GameInformation.PlayerOneAS.con;
 				break;
 
-			case "Inte":
+			case 4:
 				GameInformation.PlayerOneAS.SetInte (newValue);
 				InteTextScript.InteText.text = "INT: " + GameInformation.PlayerOneAS.inte;
 				break;
 
-			case "Wis":
+			case 5:
 				GameInformation.PlayerOneAS.SetWis (newValue);
 				WisTextScript.WisText.text = "WIS: " + GameInformation.PlayerOneAS.wis;
 				break;
 
-			case "Cha":
+			case 6:
 				GameInformation.PlayerOneAS.SetCha (newValue);
 				ChaTextScript.ChaText.text = "CHA: " + GameInformation.PlayerOneAS.cha;
 				break;	
