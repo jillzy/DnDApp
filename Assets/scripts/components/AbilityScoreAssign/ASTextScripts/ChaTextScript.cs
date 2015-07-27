@@ -9,6 +9,7 @@ public class ChaTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ChaText = GetComponent<Text>();
+		ChaText.text = "CHA: " + GameInformation.PlayerOneAS.cha;
 	}
 	
 	// Update is called once per frame

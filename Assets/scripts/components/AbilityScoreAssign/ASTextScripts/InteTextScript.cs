@@ -9,6 +9,7 @@ public class InteTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		InteText = GetComponent<Text>();
+		InteText.text = "INT: " + GameInformation.PlayerOneAS.inte;
 	}
 	
 	// Update is called once per frame

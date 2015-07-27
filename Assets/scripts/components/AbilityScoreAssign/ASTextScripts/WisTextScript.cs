@@ -9,6 +9,7 @@ public class WisTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		WisText = GetComponent<Text>();
+		WisText.text = "WIS: " + GameInformation.PlayerOneAS.wis;
 	}
 	
 	// Update is called once per frame

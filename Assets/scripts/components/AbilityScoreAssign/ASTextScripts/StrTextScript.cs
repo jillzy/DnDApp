@@ -9,7 +9,7 @@ public class StrTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StrText = GetComponent<Text>();
-		StrText.text = "STR text should update";
+		StrText.text = "STR: " + GameInformation.PlayerOneAS.str;
 	}
 	
 	// Update is called once per frame

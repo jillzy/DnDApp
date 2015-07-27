@@ -9,6 +9,7 @@ public class DexTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		DexText = GetComponent<Text>();
+		DexText.text = "DEX: " + GameInformation.PlayerOneAS.dex;
 	}
 	
 	// Update is called once per frame

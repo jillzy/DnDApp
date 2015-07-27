@@ -30,6 +30,7 @@ public class GameInformation : MonoBehaviour {
 
 	public void SavePlayerInfo() {
 		SaveAndLoadManager.SavePlayerInfo ();
+
 	}
 
 	public void LoadPlayerInfo() {

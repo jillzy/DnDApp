@@ -9,6 +9,7 @@ public class ConTextScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ConText = GetComponent<Text>();
+		ConText.text = "CON: " + GameInformation.PlayerOneAS.con;
 	}
 	
 	// Update is called once per frame
