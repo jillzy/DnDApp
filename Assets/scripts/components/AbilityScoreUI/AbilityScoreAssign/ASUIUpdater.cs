@@ -17,37 +17,44 @@ public class ASUIUpdater : MonoBehaviour {
 			case 1: 
 				GameInformation.PlayerOneAS.SetStr (newValue);
 				//DisplayText("Str");
-				StrTextScript.StrText.text = "STR: " + GameInformation.PlayerOneAS.str;
+			StrTextScript.StrText.text = "" + GameInformation.PlayerOneAS.str;
 				break;
 
 			case 2:
 				GameInformation.PlayerOneAS.SetDex (newValue);
-				DexTextScript.DexText.text = "DEX: " + GameInformation.PlayerOneAS.dex;
+			DexTextScript.DexText.text = "" + GameInformation.PlayerOneAS.dex;
 				break;
 
 			case 3:
 				GameInformation.PlayerOneAS.SetCon (newValue);
-				ConTextScript.ConText.text = "CON: " + GameInformation.PlayerOneAS.con;
+			ConTextScript.ConText.text = "" +  GameInformation.PlayerOneAS.con;
 				break;
 
 			case 4:
 				GameInformation.PlayerOneAS.SetInte (newValue);
-				InteTextScript.InteText.text = "INT: " + GameInformation.PlayerOneAS.inte;
+			InteTextScript.InteText.text = "" +  GameInformation.PlayerOneAS.inte;
 				break;
 
 			case 5:
 				GameInformation.PlayerOneAS.SetWis (newValue);
-				WisTextScript.WisText.text = "WIS: " + GameInformation.PlayerOneAS.wis;
+			WisTextScript.WisText.text = "" +  GameInformation.PlayerOneAS.wis;
 				break;
 
 			case 6:
 				GameInformation.PlayerOneAS.SetCha (newValue);
-				ChaTextScript.ChaText.text = "CHA: " + GameInformation.PlayerOneAS.cha;
+			ChaTextScript.ChaText.text = "" +  GameInformation.PlayerOneAS.cha;
 				break;	
 		
 			default: 
 				break;	
 
+		}
+	}
+
+	public void EnableRolling() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = false;
 		}
 	}
 }

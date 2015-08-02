@@ -1,10 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class DecrementAS : MonoBehaviour {
+
 	
 	int newValue = 0;
-	
+
+	void Start() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = false;
+		}
+		
+	}
+
 	public void DecrementScore(int ability) {
 		
 		switch (ability) {
@@ -47,5 +57,21 @@ public class DecrementAS : MonoBehaviour {
 	
 	float Mod(float a, float b) {
 		return a - b * Mathf.Floor (a / b);
+	}
+
+
+	public void EnableDecrement() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = true;
+		}
+	}
+
+
+	public void DisableDecrement() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = false;
+		}
 	}
 }

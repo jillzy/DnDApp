@@ -1,11 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class IncrementAS : MonoBehaviour {
-	
+
+
+
 	int newValue = 0;
 	
-	
+	void Start() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = false;
+		}
+		
+	}
+
+
 	public void IncrementScore(int ability) {
 		
 		switch (ability) {
@@ -46,4 +57,21 @@ public class IncrementAS : MonoBehaviour {
 			break;	
 		}
 	}
+
+
+	public void EnableIncrement() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = true;
+		}
+	}
+
+
+	public void DisableIncrement() {
+		
+		foreach (Transform child in transform) {
+			child.gameObject.GetComponent<Button>().interactable = false;
+		}
+	}
+
 }

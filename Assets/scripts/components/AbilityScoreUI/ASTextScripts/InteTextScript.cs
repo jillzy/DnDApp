@@ -2,18 +2,19 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class StrTextScript : MonoBehaviour {
-	
-	public static Text StrText;
+public class InteTextScript : MonoBehaviour {
 
+	public static Text InteText;
+	
 	// Use this for initialization
 	void Start () {
-		StrText = GetComponent<Text>();
-		StrText.text = "STR: " + GameInformation.PlayerOneAS.str;
+		InteText = GetComponent<Text>();
+		InteText.text = "" + GameInformation.PlayerOneAS.inte;
 	}
-	
+
+
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }

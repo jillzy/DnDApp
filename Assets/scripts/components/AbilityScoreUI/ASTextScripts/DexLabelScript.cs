@@ -2,17 +2,17 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class InteTextScript : MonoBehaviour {
-
-	public static Text InteText;
+public class DexLabelScript : MonoBehaviour {
+	
+	public static Text DexLabel;
 	
 	// Use this for initialization
 	void Start () {
-		InteText = GetComponent<Text>();
-		InteText.text = "INT: " + GameInformation.PlayerOneAS.inte;
+
+		DexLabel = GetComponent<Text>();
+		DexLabel.text = "DEX: ";
 	}
-
-
+	
 	// Update is called once per frame
 	void Update () {
 		

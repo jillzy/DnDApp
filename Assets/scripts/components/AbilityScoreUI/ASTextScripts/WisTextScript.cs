@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ConTextScript : MonoBehaviour {
+public class WisTextScript : MonoBehaviour {
 	
-	public static Text ConText;
+	public static Text WisText;
 	
 	// Use this for initialization
 	void Start () {
-		ConText = GetComponent<Text>();
-		ConText.text = "CON: " + GameInformation.PlayerOneAS.con;
+		WisText = GetComponent<Text>();
+		WisText.text = "" + GameInformation.PlayerOneAS.wis;
 	}
 	
 	// Update is called once per frame

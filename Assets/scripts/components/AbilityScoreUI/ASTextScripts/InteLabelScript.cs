@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ChaTextScript : MonoBehaviour {
+public class InteLabelScript : MonoBehaviour {
 	
-	public static Text ChaText;
+	public static Text InteLabel;
 	
 	// Use this for initialization
 	void Start () {
-		ChaText = GetComponent<Text>();
-		ChaText.text = "CHA: " + GameInformation.PlayerOneAS.cha;
+		InteLabel = GetComponent<Text>();
+		InteLabel.text = "INT: ";
 	}
 	
 	// Update is called once per frame

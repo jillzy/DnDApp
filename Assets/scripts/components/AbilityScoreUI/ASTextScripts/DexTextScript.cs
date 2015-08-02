@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class WisTextScript : MonoBehaviour {
+public class DexTextScript : MonoBehaviour {
 	
-	public static Text WisText;
+	public static Text DexText;
 	
 	// Use this for initialization
 	void Start () {
-		WisText = GetComponent<Text>();
-		WisText.text = "WIS: " + GameInformation.PlayerOneAS.wis;
+		DexText = GetComponent<Text>();
+		DexText.text = "" + GameInformation.PlayerOneAS.dex;
 	}
 	
 	// Update is called once per frame

@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class DexTextScript : MonoBehaviour {
+public class StrLabelScript : MonoBehaviour {
 	
-	public static Text DexText;
+	public static Text StrLabel;
 	
 	// Use this for initialization
 	void Start () {
-		DexText = GetComponent<Text>();
-		DexText.text = "DEX: " + GameInformation.PlayerOneAS.dex;
+		StrLabel = GetComponent<Text>();
+		StrLabel.text = "STR: ";
 	}
 	
 	// Update is called once per frame
